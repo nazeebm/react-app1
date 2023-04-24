@@ -60,3 +60,9 @@
   width: 95%;
   margin-top: 3%;
 }
+.components{
+  color: whitesmoke;
+  background-color: rgb(70, 132, 225);
+  font-family: 'Courier New', Courier, monospace;
+  width: max-content;
+}

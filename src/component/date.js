@@ -1,4 +1,5 @@
-import "./activityItem.css";
+import "./component.css";
+
 function Date(props) {
     
 const day=props.date.toLocaleString('en-US',{day:'2-digit'});

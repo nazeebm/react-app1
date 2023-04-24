@@ -22,6 +22,7 @@ function Activities() {
 
     return (
         <Card className='card'>
+            <p className="components">//..Activities component</p>
         <ActivityItem 
                   date={objects[0].date}
                   activity={objects[0].activity}

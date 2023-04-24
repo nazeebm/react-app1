@@ -1,4 +1,5 @@
-import "./activityItem.css";
+import "./component.css";
+
 function Card(props){
         return(
             <div className={props.className}>{props.children}</div>
