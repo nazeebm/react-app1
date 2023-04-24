@@ -1,0 +1,62 @@
+.threeInContainer {
+  
+  background-color: grey;
+  border-radius: 10px;
+  padding: 5px;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.appDiv {
+    margin-top: 10%;
+  }
+.card {
+  margin: auto;
+  width: 70%;
+  background-color: black;
+  border-radius: 10px;
+  padding: 5px;
+  
+  
+}
+.dateTime {
+  color: white;
+  border-radius: 10px;
+  padding: 2px;
+  border-color: white;
+  border-width: 2px;
+  border-style: solid;
+  height: min-content;
+  padding: 0 3% 0 3%;
+  
+}
+.activity {
+  width: 100%;
+  color: white;
+  padding: 0 3% 0 3%;
+}
+.time {
+  background-color: rgb(119, 5, 119);
+}
+.date {
+  background-color: rgb(72, 71, 71);
+ min-width: fit-content; 
+}
+.container{
+  background-color: rgb(178, 134, 219);
+  border-radius: 10px;
+  width:70%;
+  margin: auto;
+  margin-bottom: 5%;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  padding: 3%;
+  
+}
+.box{
+  border-radius: 5px;
+  height: 30px;
+  width: 95%;
+  margin-top: 3%;
+}
