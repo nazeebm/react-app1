@@ -1,7 +1,4 @@
-body
-{
-  background-color: peachpuff;
-}
+
 .App {
   text-align: center;
 }
@@ -42,4 +39,7 @@ body
 }
 p {
   color: white;
+}
+.title{
+  text-align: center;
 }

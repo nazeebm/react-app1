@@ -56,13 +56,18 @@
 }
 .box{
   border-radius: 5px;
-  height: 30px;
+  height: 40px;
   width: 95%;
   margin-top: 3%;
 }
-.components{
-  color: whitesmoke;
-  background-color: rgb(70, 132, 225);
-  font-family: 'Courier New', Courier, monospace;
-  width: max-content;
+.button1
+{
+align-self: flex-end;
+justify-self: center;}
+.buttonAdd
+{
+  padding: 0.5rem 2rem 0.5rem 2rem;
+  background-color: rgb(13, 13, 247);
+  color: white;
+  border-radius: 10px;
 }

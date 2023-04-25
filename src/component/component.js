@@ -4,20 +4,18 @@ import ExpenseFilter from "./ExpenseFilter";
 
 const Component = props => 
 {
-    let Data2 = [];
+    let Data2 = [0,1];
     const DataSaver = (Data1) => 
         {
             console.log(Data1);
             Data2.push(Data1);
-            return Data2;
+            console.log(Data2);
+            console.log(Data2);
         };
 
-      const OptionHandler=(event)=>{
+    const OptionHandler=(event)=>{
           console.log(event.target.value)
       }
-
-    const demo = DataSaver();
-    console.log(demo)
 
     return (
         <div>

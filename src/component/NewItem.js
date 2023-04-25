@@ -27,21 +27,17 @@ const NewItem = props => {
       d2: enteredHour,
       d3: new Date(enteredDate),
     };
+    props.onDatas(Data1);
 
-    const demo = props.onDatas(Data1);
-    console.log(demo);
-
-    // console.log(Data1);
     setActivity("");
     setHour("");
     setDate("");
-    // console.log('act:'+enteredActivity +
-    // ',hr' +enteredHour+',dt'+ enteredDate);
   };
 
   return (
     <div>
       <form onSubmit={Submit} className='container'>
+
         <div className='activity1'>
           <div>
             <label>Activity</label>
@@ -59,7 +55,7 @@ const NewItem = props => {
         <div>
           <div>
             <label>Hours</label>
-            <div className='box'>
+            <div>
               <input
                 className='box'
                 type='text'
@@ -84,11 +80,14 @@ const NewItem = props => {
           </div>
         </div>
 
-        <div></div>
+        <div className='button1'>
+          <button className="buttonAdd" type='submit'>
+            Add
+          </button>
+        </div>
 
-        <button type='submit' className='button1'>
-          Add Expense
-        </button>
+        
+
       </form>
     </div>
   );
