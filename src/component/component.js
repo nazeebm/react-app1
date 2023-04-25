@@ -19,6 +19,7 @@ const Component = props =>
 
     return (
         <div>
+          
           <NewItem onDatas={DataSaver} />
           <ExpenseFilter onYear={OptionHandler}/>
           <Activities></Activities>

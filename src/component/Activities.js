@@ -1,5 +1,4 @@
-import Card from "./Card";
-import ActivityItem from "./activityItem";
+import Data from "./Data";
 
 function Activities() {
     var objects=[
@@ -21,31 +20,9 @@ function Activities() {
       ]
 
     return (
-        <Card className='card'>
-        <ActivityItem 
-                  date={objects[0].date}
-                  activity={objects[0].activity}
-                  hours={objects[0].hours}
-        ></ActivityItem>
-
-        <ActivityItem 
-                   date={objects[1].date}
-                   activity={objects[1].activity}
-                   hours={objects[1].hours}
-        ></ActivityItem>
-
-        <ActivityItem 
-                   date={objects[2].date}
-                   activity={objects[2].activity}
-                   hours={objects[2].hours}
-        ></ActivityItem>
-
-        <ActivityItem 
-                   date={objects[3].date}
-                   activity={objects[3].activity}
-                   hours={objects[3].hours}
-        ></ActivityItem>
-        </Card>
+        <div>
+            <Data objects={objects}/>
+        </div>
     )
 }
 
