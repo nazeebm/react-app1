@@ -1,12 +1,10 @@
 App.js
         1. Component
                 1. NewItem() 
-                2. Activities()
-                            1. ActivityItem()
-                                        1. Date()
-                                        2. Card()
-                                        3. Data()
-                            2. Card()
+                2. Data()
+                                1. ActivityItem()
+                                2. Date()
+                                3. Card()                                   
                 3.ExpenseFilter()
 
         

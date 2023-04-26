@@ -1,29 +1,31 @@
 import NewItem from "./NewItem";
-import Activities from "./Activities";
+// import Activities from "./Activities";
 import ExpenseFilter from "./ExpenseFilter";
+import { useState } from "react";
 
-const Component = props => 
-{
-    let Data2 = [0,1];
-    const DataSaver = (Data1) => 
-        {
-            console.log(Data1);
-            Data2.push(Data1);
-            console.log(Data2);
-            console.log(Data2);
-        };
+const Dummy = [
+  {
+    activity: "prayer",
+    hours: "2",
+    date: new Date(2020, 7, 14),
+  },
+];
 
-    const OptionHandler=(event)=>{
-          console.log(event.target.value)
-      }
+const Component = props => {
+                      const [Data2, setData2] = useState(Dummy);
+                      const DataSaver = Data1 => {
+                                                    setData2(Data3 => {
+                                                                        return [Data1, ...Data3]
+                                                                      })
+                                                  }
+              
 
-    return (
-        <div>
-          
-          <NewItem onDatas={DataSaver} />
-          <ExpenseFilter onYear={OptionHandler}/>
-          <Activities></Activities>
-        </div>
+  return (
+    <div>
+      <NewItem onDatas={DataSaver} />
+      <ExpenseFilter Data2={Data2} />
+            {/* <Activities></Activities> */}
+    </div>
   );
 };
 export default Component;

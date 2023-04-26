@@ -23,10 +23,10 @@ const NewItem = props => {
   const Submit = event => {
     event.preventDefault();
     const Data1 = {
-      d1: enteredActivity,
-      d2: enteredHour,
-      d3: new Date(enteredDate),
-    };
+      activity: enteredActivity,
+      hours: enteredHour,
+      date: new Date(enteredDate),
+  };
     props.onDatas(Data1);
 
     setActivity("");
