@@ -6,7 +6,7 @@ function App() {
   
   return (
     <div className="appDiv">
-        <h1 className="title1" style={{color: 'black'}}>{A}</h1>
+        <h1 className="title2" style={{color: 'black'}}>{A}</h1>
         <Component/>
     </div>
   );
