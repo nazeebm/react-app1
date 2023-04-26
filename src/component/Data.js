@@ -8,7 +8,7 @@ const Data = prop => {
   return (
     <Card className='card'>
       {prop.objects
-    //   .filter(y => y.date.getFullYear()===(prop.Year))
+      .filter(y => y.date.getFullYear()===(prop.Year))
         .map(x => (
           <ActivityItem
             key={x.id}
